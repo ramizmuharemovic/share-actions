@@ -26,10 +26,10 @@ jobs:
         with:
           ref: master
         run: echo 'zdravo'
-        if: ${{ github.event.inputs.rocm_version == false }}
-        run: echo 'test me'
-     - name: Checkout new branch
-        uses: actions/checkout@v2
-        with:
-          ref: master
-        run: echo 'cao'
+        #if: ${{ github.event.inputs.rocm_version == false }}
+        #run: echo 'test me'
+   #  - name: Checkout new branch
+       # uses: actions/checkout@v2
+        #with:
+         # ref: master
+       # run: echo 'cao'
