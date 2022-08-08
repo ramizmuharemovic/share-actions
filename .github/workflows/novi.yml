@@ -17,17 +17,14 @@ on:
 
 
 jobs:
+  runs-on: ubuntu-latest
 
-  - name: Check GPU name
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout new branch
-        uses: actions/checkout@v2
-        with:
-          ref: master
-        run: echo 'zdravo'
+  steps:
+    - name: Checkout new branch
+      uses: actions/checkout@v2
+      with:
+        ref: master
+      run: echo 'zdravo'
         #if: ${{ github.event.inputs.rocm_version == false }}
         #run: echo 'test me'
    #  - name: Checkout new branch
