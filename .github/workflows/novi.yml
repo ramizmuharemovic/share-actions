@@ -6,12 +6,12 @@ on:
       rocm_version:
         type: string
         description: ROCm release version
-        required: true
+        required: false
         default: "5.1"
       test_me:
         type: string
         description: Test me
-        required: true
+        required: false
         default: "2"
 
 
@@ -28,7 +28,7 @@ jobs:
       - name: run echo
         run: echo 'zdravo'
       - name: run if is
-        if: ${{ github.event.inputs.rocm_version == false }}
+        if: "${{ github.event.inputs.rocm_version == '' }}"
         run: echo 'test me'
    #  - name: Checkout new branch
        # uses: actions/checkout@v2
