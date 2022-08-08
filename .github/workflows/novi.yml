@@ -21,10 +21,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout new branch
-        uses: actions/checkout@v2
-        with:
-          ref: master
+      #- name: Checkout new branch
+       # uses: actions/checkout@v2
+        #with:
+          #ref: master
       - name: run echo
         run: echo 'zdravo'
         #if: ${{ github.event.inputs.rocm_version == false }}
