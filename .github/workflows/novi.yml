@@ -28,7 +28,7 @@ jobs:
       - name: run echo
         run: echo 'zdravo'
       - name: run if is
-        if: ${{ github.inputs.rocm_version == false }}
+        if: ${{ github.event.inputs.rocm_version == false }}
         run: echo 'test me'
    #  - name: Checkout new branch
        # uses: actions/checkout@v2
