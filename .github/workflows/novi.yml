@@ -15,7 +15,7 @@ on:
         default: "2"
 
 
-on: push
+
 jobs:
   build:
     runs-on: ubuntu-latest
