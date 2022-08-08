@@ -17,6 +17,8 @@ on:
 
 
 jobs:
+  check_gpu_name:
+    name: Check GPU name
 
     runs-on: ubuntu-latest
 
