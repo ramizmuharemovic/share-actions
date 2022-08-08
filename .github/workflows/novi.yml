@@ -27,6 +27,7 @@ jobs:
           #ref: master
       - name: run echo
         run: echo 'zdravo'
+      - name: run if is
         if: ${{ github.event.inputs.rocm_version == false }}
         run: echo 'test me'
    #  - name: Checkout new branch
