@@ -1,3 +1,3 @@
 FROM ubuntu
-COPY action.yml /
+COPY action.yml .
 
